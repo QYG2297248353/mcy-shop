@@ -13,6 +13,6 @@ rsync -a --exclude 'config' --exclude 'docker-entrypoint.sh' $TEMP_DIR/ $TARGET_
 
 chown -R www-data:www-data $TARGET_DIR
 
-RUN chmod 777 "$TARGET_DIR/bin" "$TARGET_DIR/console.sh"
+chmod 777 "$TARGET_DIR/bin" "$TARGET_DIR/console.sh"
 
 exec apache2-foreground
