@@ -62,5 +62,11 @@
       "Kernel\\": "kernel/",
       "Usr\\": "usr/"
     }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.org"
+    }
   }
 }
